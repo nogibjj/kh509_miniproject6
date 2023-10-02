@@ -1,5 +1,7 @@
 # Python Script interacting with SQL Database
 
+[![CI](https://github.com/nogibjj/kh509_miniproject5/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/kh509_miniproject5/actions/workflows/cicd.yml)
+
 In this project, I used the SQL Lab as my base repo. I copied the lab's repository and then proceeded with the Grocery Database. I fixed the query so we can see the top 5 rows. In addition I added a function that allows us to insert a row into the database. I added a test case to make sure we can connect to the database. I followed CRUD Operations by doing the following: 
 
 - Database Creation
