@@ -1,6 +1,7 @@
 import unittest
 import sqlite3
-from mylib.query import head_query, insert_query  
+from mylib.query import head_query, insert_query 
+import io
 
 class TestDatabaseFunctions(unittest.TestCase):
     def setUp(self):
