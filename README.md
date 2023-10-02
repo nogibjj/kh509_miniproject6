@@ -1,16 +1,13 @@
 # Python Script interacting with SQL Database
 
-![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
+In this project, I used the SQL Lab as my base repo. I copied the lab's repository and then proceeded with the Gorcery Database. I fixed the query so we can see the top 5 rows. In addition I added a function that allows us to insert a row into the database. I added a test case to make sure we can connect to the database. I followed CRUD Operations by doing the following: 
 
+- Database Creation
+- Query which SELECTS first 5 rows.
+- Insert a row
+- Save the database and update the table using a temp csv and the base csv.
 
-## Requirements for this project:
-Connect to a SQL database
-Perform CRUD operations
-Write at least two different SQL queries
+This project works on a matrix build of 3.7,3.8,3.9.
 
-
-## Grading Criteria
-Database connection (20 points)
-CRUD operations (20 points)
 
 
