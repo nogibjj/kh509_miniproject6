@@ -4,22 +4,21 @@ ETL-Query script
 
 from mylib.extract import extract
 from mylib.transform_load import load
-from mylib.query import query
+from mylib.query import head_query, insert_query
 import fire
 
 
 def main(query_statement):
     # Extract
     print("Extracting data...")
-    head_query()
-    insert_query()
-
+    extract()
     # Transform and load
     print("Transforming data...")
     load()
 
-    print("Querying data...")
-    query(query_statement)
+    print("Querying data...")4
+    head_query()
+    insert_query()
 
 
 # Following below are sample CRUD Operations
