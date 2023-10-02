@@ -22,7 +22,7 @@ class TestDatabaseFunctions(unittest.TestCase):
           #      ingred_normalization_term REAL,
           #      semantic_tree_name TEXT,
           #      semantic_tree_node TEXT
-            )
+         #   )
         ''')
         self.conn.commit()
 
