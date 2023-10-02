@@ -27,11 +27,21 @@ def insert_query():
     cursor = conn.cursor()
 
     # Sample data for insertion, replace these values with actual data
-    grocery_data = (1, 'Item Name', 'Category', 10.99, 'Brand')
+        grocery_data = (
+        'folgers coffee',
+        11,
+        0.21,
+        0.2254401549508692,
+        4.3,
+        15.2222,
+        None,
+        None
+    )
     try:
         cursor.execute("""
-            INSERT INTO TableName (id, item_name, category, price, brand)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO GroceryDB 
+            (general_name, count_products, ingred_FPro, avg_FPro_products, avg_distance_root, ingred_normalization_term, semantic_tree_name, semantic_tree_node)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """, grocery_data)
         conn.commit()
         print("Row inserted successfully.")
