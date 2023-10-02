@@ -26,8 +26,7 @@ def insert_query():
     conn = sqlite3.connect("GroceryDB.db")
     cursor = conn.cursor()
 
-    # Sample data for insertion, replace these values with actual data
-        grocery_data = (
+    grocery_data = (
         'folgers coffee',
         11,
         0.21,
