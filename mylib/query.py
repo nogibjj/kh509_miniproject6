@@ -40,7 +40,9 @@ def insert_query():
     try:
         cursor.execute("""
             INSERT INTO GroceryDB 
-            (general_name, count_products, ingred_FPro, avg_FPro_products, avg_distance_root, ingred_normalization_term, semantic_tree_name, semantic_tree_node)
+            (general_name, count_products, ingred_FPro, avg_FPro_products, 
+            avg_distance_root, ingred_normalization_term, 
+            semantic_tree_name, semantic_tree_node)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """, grocery_data)
         conn.commit()
