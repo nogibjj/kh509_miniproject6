@@ -82,7 +82,7 @@ class TestDatabaseFunctions(unittest.TestCase):
         self.assertEqual(inserted_row[5], 4.3)
         self.assertEqual(inserted_row[6], 15.2222)
         self.assertIsNone(inserted_row[7])
-            self.assertIsNone(inserted_row[8])
+        self.assertIsNone(inserted_row[8])
 
 
 if __name__ == '__main__':
