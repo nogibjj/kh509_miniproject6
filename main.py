@@ -11,7 +11,8 @@ import fire
 def main(query_statement):
     # Extract
     print("Extracting data...")
-    extract()
+    head_query()
+    insert_query()
 
     # Transform and load
     print("Transforming data...")
