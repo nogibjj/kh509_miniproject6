@@ -9,5 +9,16 @@ In this project, I used the SQL Lab as my base repo. I copied the lab's reposito
 
 This project works on a matrix build of 3.7,3.8,3.9.
 
+Here is the architecture of the python script interacting with GroceryDB:
+
+![image](https://github.com/nogibjj/kh509_miniproject5/assets/143521756/96079900-44e3-40a8-baca-fad5135b920b)
+
+
+Here is proof of queries using github codespaces:
+
+![image](https://github.com/nogibjj/kh509_miniproject5/assets/143521756/4d80ce28-1ca5-4a0d-8142-b42bb29d7aad)
+![image](https://github.com/nogibjj/kh509_miniproject5/assets/143521756/ae647d82-e5b6-4b74-8d92-0d351a9fb766)
+
+
 
 
