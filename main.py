@@ -16,7 +16,7 @@ def main(query_statement):
     print("Transforming data...")
     load()
 
-    print("Querying data...")4
+    print("Querying data...")
     head_query()
     insert_query()
 
