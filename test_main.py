@@ -1,6 +1,6 @@
 import unittest
 import sqlite3
-from your_module_name import head_query, insert_query  # Replace 'your_module_name' with the actual module name where your functions are defined
+from mylib.query import head_query, insert_query  # Replace 'your_module_name' with the actual module name where your functions are defined
 from prettytable import PrettyTable
 
 class TestDatabaseFunctions(unittest.TestCase):
@@ -29,7 +29,6 @@ class TestDatabaseFunctions(unittest.TestCase):
         self.conn.close()
 
     def test_head_query(self):
-        # Insert test data into the table
         self.cursor.executemany('''
             INSERT INTO GroceryDB 
             (general_name, count_products, ingred_FPro, avg_FPro_products, 
