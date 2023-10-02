@@ -63,17 +63,17 @@ class TestDatabaseFunctions(unittest.TestCase):
         self.assertIn("item3", printed_output)
 
     def test_insert_query(self):
-        # Call the insert_query function
+    # Call the insert_query function
         insert_query()
 
-        # Query the database to check if the row was inserted
+    # Query the database to check if the row was inserted
         self.cursor.execute("SELECT * FROM GroceryDB")
         rows = self.cursor.fetchall()
 
-        # Assert that there is one row in the table
+    # Assert that there is one row in the table
         self.assertEqual(len(rows), 1)
 
-        # Assert the values of the inserted row
+    # Assert the values of the inserted row
         inserted_row = rows[0]
         self.assertEqual(inserted_row[1], 'folgers coffee')
         self.assertEqual(inserted_row[2], 11)
@@ -82,7 +82,8 @@ class TestDatabaseFunctions(unittest.TestCase):
         self.assertEqual(inserted_row[5], 4.3)
         self.assertEqual(inserted_row[6], 15.2222)
         self.assertIsNone(inserted_row[7])
-        self.assertIsNone(inserted_row[8])
+            self.assertIsNone(inserted_row[8])
+
 
 if __name__ == '__main__':
     unittest.main()
