@@ -7,7 +7,7 @@ In this project, I used the SQL Lab as my base repo. I copied the lab's reposito
 - Insert a row
 - Save the database and update the table using a temp csv and the base csv.
 
-This project works on a matrix build of 3.7,3.8,3.9.
+This project works on a matrix build of 3.7,3.8,3.9. I also added pretty table so the database looks nicer when interacting with it!
 
 Here is the architecture of the python script interacting with GroceryDB:
 
