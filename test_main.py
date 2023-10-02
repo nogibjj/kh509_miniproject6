@@ -1,7 +1,6 @@
 import unittest
 import sqlite3
-from mylib.query import head_query, insert_query  # Replace 'your_module_name' with the actual module name where your functions are defined
-from prettytable import PrettyTable
+from mylib.query import head_query, insert_query  
 
 class TestDatabaseFunctions(unittest.TestCase):
     def setUp(self):
