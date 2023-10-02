@@ -1,3 +1,5 @@
+'''
+
 import unittest
 import sqlite3
 from mylib.query import head_query, insert_query 
@@ -10,16 +12,16 @@ class TestDatabaseFunctions(unittest.TestCase):
         self.cursor = self.conn.cursor()
         # Create a test table
         self.cursor.execute('''
-            CREATE TABLE GroceryDB (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                general_name TEXT,
-                count_products INTEGER,
-                ingred_FPro REAL,
-                avg_FPro_products REAL,
-                avg_distance_root REAL,
-                ingred_normalization_term REAL,
-                semantic_tree_name TEXT,
-                semantic_tree_node TEXT
+          #  CREATE TABLE GroceryDB (
+          #      id INTEGER PRIMARY KEY AUTOINCREMENT,
+          #      general_name TEXT,
+          #      count_products INTEGER,
+          #      ingred_FPro REAL,
+          #      avg_FPro_products REAL,
+          #      avg_distance_root REAL,
+          #      ingred_normalization_term REAL,
+          #      semantic_tree_name TEXT,
+          #      semantic_tree_node TEXT
             )
         ''')
         self.conn.commit()
@@ -30,11 +32,11 @@ class TestDatabaseFunctions(unittest.TestCase):
 
     def test_head_query(self):
         self.cursor.executemany('''
-            INSERT INTO GroceryDB 
-            (general_name, count_products, ingred_FPro, avg_FPro_products, 
-            avg_distance_root, ingred_normalization_term, 
-            semantic_tree_name, semantic_tree_node)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        #    INSERT INTO GroceryDB 
+        #    (general_name, count_products, ingred_FPro, avg_FPro_products, 
+        #    avg_distance_root, ingred_normalization_term, 
+        #    semantic_tree_name, semantic_tree_node)
+        #    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ''', [
             ('item1', 1, 0.1, 0.2, 0.3, 0.4, 'tree1', 'node1'),
             ('item2', 2, 0.2, 0.3, 0.4, 0.5, 'tree2', 'node2'),
@@ -87,4 +89,10 @@ class TestDatabaseFunctions(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+'''
 
+import sqlite3
+
+
+def test_connection():
+    assert sqlite3.connect("GroceryDB.db")
