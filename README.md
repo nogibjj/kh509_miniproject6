@@ -1,3 +1,7 @@
+# Complex SQL Query for a MySQL Database
+## Katelyn Hucker (kh509)
+
+This is my project which uses MySQL Database to join and manipulate a database with a complex SQL Query. 
 ### Requirements:
 - Design a complex SQL query involving joins, aggregation, and sorting
 - Provide an explanation for what the query is doing and the expected results
@@ -12,6 +16,9 @@ The MySQL Database is a movies database which has genre, ratings, and movies. Th
 - AGGREGATION: We sum and multiple by 10 to get a normalized total rating score
 - SORTING: We sort the final database by table by highest to lowest score.
 
+![image](https://github.com/nogibjj/kh509_miniproject6/assets/143521756/1b49e1f6-6f5d-49c9-95d2-a4c3c0c19e97)
+
 
 ### What we expect:
 - Since we are only looking at movies in year 2021 we see that there is only 1 movie that would return: 'Movie B.' However typically we would see the top 5 movies in whatever year, and there would be multiple reviews contributing to the database so the aggregation actually works. 
+
